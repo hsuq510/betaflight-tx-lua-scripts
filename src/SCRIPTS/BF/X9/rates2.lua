@@ -27,7 +27,7 @@ return {
       { x = 70, y = 44, min = 0,    max = 1,     vals = { 8 },      to = SMLSIZE, table = { [0]="OFF", "ON" } },
       { x = 190, y = 12, min = 0,   max = 100,  vals = { 31 }, to = SMLSIZE },
       { x = 190, y = 20, min = 0,    max = 1,     vals = { 26 },      to = SMLSIZE, table = { [0]="OFF", "ON" } },
-      { x = 190, y = 28, min = 0,    max = 1,     vals = { 28 },      to = SMLSIZE, table = { [0]="OFF", "ON" } },
+      { x = 190, y = 28, min = 0,    max = 1,     vals = { 28 },      to = SMLSIZE, table = { [0]="OFF", "RP","RPY","RPINC","RPYINC" } },
       { x = 190, y = 36, min = 0,    max = 1,     vals = { 29 },      to = SMLSIZE, table = { [0]="GYRO", "SET" } },
    }
 }
