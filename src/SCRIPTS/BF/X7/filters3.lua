@@ -7,6 +7,7 @@ return {
     title             = "Dyn LPFs",
     minBytes          = 37,
     outputBytes       = 37,
+    requiredVersion   = 1.041,
     text= {
         { t = "Gyro Dyn LPF", x = 3, y = 20, to = SMLSIZE },
         { t = "DTerm Dyn LPF", x = 1, y = 30, to = SMLSIZE },
