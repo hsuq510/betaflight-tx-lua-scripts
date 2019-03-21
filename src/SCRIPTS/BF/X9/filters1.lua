@@ -4,7 +4,7 @@ return {
     write             = 93, -- MSP_SET_FILTER_CONFIG
     eepromWrite       = true,
     reboot            = false,
-    title             = "Filters",
+    title             = "Standard Filters",
     minBytes          = 28,
     outputBytes       = 29,
     text= {
