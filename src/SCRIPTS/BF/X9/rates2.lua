@@ -2,7 +2,7 @@
 return {
    read           = 94, -- MSP_PID_ADVANCED
    write          = 95, -- MSP_SET_PID_ADVANCED
-   title          = "RC Tuning (2/2)",
+   title          = "RC Tuning",
    reboot         = false,
    eepromWrite    = true,
    minBytes       = 39,
