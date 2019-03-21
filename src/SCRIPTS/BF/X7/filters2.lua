@@ -4,7 +4,7 @@ return {
     write             = 93, -- MSP_SET_FILTER_CONFIG
     eepromWrite       = true,
     reboot            = false,
-    title             = "Standard LPFs",
+    title             = "Std LPFs",
     minBytes          = 28,
     outputBytes       = 29,
     text= {
