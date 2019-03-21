@@ -17,7 +17,6 @@ return {
       { t = "Iterm Rot.",      x = 130, y = 20, to = SMLSIZE },
       { t = "Iterm Relax",      x = 130, y = 28, to = SMLSIZE },
       { t = "Iterm Rlx Ty",      x = 130, y = 36, to = SMLSIZE },
-      { t = "Iterm Rlx CO",      x = 130, y = 44, to = SMLSIZE },
    },
    fields = {
       { x = 70, y = 12, min = 0,   max = 20,  vals = { 30 }, to = SMLSIZE },
