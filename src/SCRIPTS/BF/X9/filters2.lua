@@ -4,7 +4,7 @@ return {
     write             = 93, -- MSP_SET_FILTER_CONFIG
     eepromWrite       = true,
     reboot            = false,
-    title             = "Dynamic LPF",
+    title             = "Dynamic LPFs",
     minBytes          = 37,
     outputBytes       = 37,
     requiredVersion = 1.041,
