@@ -7,6 +7,7 @@ return {
    eepromWrite    = true,
    minBytes       = 39,
    outputBytes    = 39,
+   requiredVersion = 1.040,
    text = {
       { t = "ABS Control",      x = 5, y = 12, to = SMLSIZE },
       { t = "AG Gain",      x = 5, y = 20, to = SMLSIZE },
