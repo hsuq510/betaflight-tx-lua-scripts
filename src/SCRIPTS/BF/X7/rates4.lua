@@ -20,6 +20,6 @@ return {
       { x = 70, y = 20, min = 0,    max = 1,     vals = { 26 },      to = SMLSIZE, table = { [0]="OFF", "ON" } },
       { x = 70, y = 28, min = 0,    max = 4,     vals = { 28 },      to = SMLSIZE, table = { [0]="OFF", "RP","RPY","RPINC","RPYINC" } },
       { x = 70, y = 36, min = 0,    max = 1,     vals = { 29 },      to = SMLSIZE, table = { [0]="GYRO", "SETP" } },
-      { x = 70, y = 44, min = 0,    max = 50,    vals = { 30 }, to = SMLSIZE },
+      { x = 70, y = 44, min = 0,    max = 20,    vals = { 30 }, to = SMLSIZE },
    }
 }
