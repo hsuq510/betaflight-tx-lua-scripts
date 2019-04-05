@@ -60,6 +60,7 @@ end
 
 local function invalidatePages()
     Page = nil
+    dataInitialised = false
     currentState = pageStatus.display
     saveTS = 0
 end
@@ -175,7 +176,7 @@ end
 
 local function drawScreen()
     local screen_title = Page.title
-    drawScreenTitle("Betaflight / "..screen_title)
+    drawScreenTitle("Betaflight/"..screen_title)
     for i=1,#(Page.text) do
         local f = Page.text[i]
         local textOptions = (f.to or 0) + globalTextOptions
@@ -266,6 +267,19 @@ end
 
 function run_ui(event)
     local now = getTime()
+     if not dataInitialised then
+        if data_init == nil then
+          data_init = assert(loadScript(SCRIPT_HOME .. "/data_init.lua"))()
+        end
+        dataInitialised = data_init.init();
+
+        if dataInitialised then
+           data_init = nil
+           collectgarbage()
+        end
+    end
+
+
     -- if lastRunTS old than 500ms
     if lastRunTS + 50 < now then
         invalidatePages()
@@ -354,6 +368,10 @@ function run_ui(event)
     if protocol.rssi() == 0 then
         lcd.drawText(NoTelem[1],NoTelem[2],NoTelem[3],NoTelem[4])
     end
+    if apiVersion >= 0 then
+        lcd.drawText(ApiVer[1],ApiVer[2],"APIVer:"..apiVersion,ApiVer[3])
+    end
+
     if currentState == pageStatus.displayMenu then
         drawMenu()
     elseif currentState == pageStatus.saving then
