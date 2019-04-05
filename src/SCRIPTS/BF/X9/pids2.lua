@@ -8,7 +8,7 @@ return {
    minBytes       = 38,
    text = {
       { t = "Feed",       x =  63,  y = 11, to=SMLSIZE },
-      { t = "forward",    x =  55,  y = 18, to=SMLSIZE },
+      { t = "Forward",    x =  55,  y = 18, to=SMLSIZE },
       { t = "Transition", x =  101, y = 35, to=SMLSIZE },
       { t = "ROLL",       x =  25,  y = 26, to=SMLSIZE },
       { t = "PITCH",      x =  25,  y = 36, to=SMLSIZE },
